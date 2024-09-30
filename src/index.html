@@ -1,20 +1,67 @@
 <!DOCTYPE html>
 <html lang="ru" class="page">
+  @include('partials/head.html')
 
-@include('partials/head.html')
+  <body class="page__body">
+    <div class="site-container">
+      @include('partials/header.html')
+      <main class="main" data-scroll-container>
+        <section class="hero">
+          <div class="container">
+            <div class="hero__text" data-scroll data-scroll-speed="-0.2">
+              <h1>
+                Новая ветвь <br />
+                управления гостиницами, <br />
+                жилыми и нежилыми <br />
+                фондами
+              </h1>
+              <span
+                >Наша задача — <br />
+                ваш комфорт</span
+              >
+            </div>
+          </div>
+          <img src="img/home_bg.jpg" alt="" class="hero__bg" />
+          <div class="hero__bottom">
+            <svg>
+              <use xlink:href="img/sprite.svg#homeBottom"></use>
+            </svg>
+            <div class="hero__bottom-line"></div>
+          </div>
+        </section>
+        <section class="desc container" data-scroll data-scroll-speed="0.1">
+          <span
+            >Целями деятельности ФГБУ «Комфортная среда» являются содержание
+            (эксплуатация) имущества, находящегося в государственной
+            собственности, обеспечение эксплуатационно-технического обслуживания
+            и содержание объектов и помещений, оборудования и прилегающей
+            территории в надлежащем состоянии.</span
+          >
+          <span
+            >Целями деятельности ФГБУ «Комфортная среда» являются содержание
+            (эксплуатация) имущества, находящегося в государственной
+            собственности, обеспечение эксплуатационно-технического обслуживания
+            и содержание объектов и помещений, оборудования и прилегающей
+            территории в надлежащем состоянии.</span
+          >
+          <span
+            >Целями деятельности ФГБУ «Комфортная среда» являются содержание
+            (эксплуатация) имущества, находящегося в государственной
+            собственности, обеспечение эксплуатационно-технического обслуживания
+            и содержание объектов и помещений, оборудования и прилегающей
+            территории в надлежащем состоянии.</span
+          >
+          <span
+            >Целями деятельности ФГБУ «Комфортная среда» являются содержание
+            (эксплуатация) имущества, находящегося в государственной
+            собственности, обеспечение эксплуатационно-технического обслуживания
+            и содержание объектов и помещений, оборудования и прилегающей
+            территории в надлежащем состоянии.</span
+          >
+        </section>
+      </main>
 
-<body class="page__body">
-  <div class="site-container">
-    @include('partials/header.html')
-    <main class="main">
-      <picture>
-        <source srcset="img/cover.webp" type="image/webp">
-        <img loading="lazy" src="img/cover.jpg" class="image" width="300" height="300" alt="Обложка канала MaxGraph">
-      </picture>
-    </main>
-    @include('partials/footer.html')
-    <!-- @include('html/h1.html') пример include -->
-  </div>
-</body>
-
+      @include('partials/footer.html')
+    </div>
+  </body>
 </html>

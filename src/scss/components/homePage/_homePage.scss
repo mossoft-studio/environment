@@ -2,7 +2,7 @@
   position: relative;
   height: 100vh;
 
-  & .container {
+  .container {
     position: relative;
     height: 100%;
   }
@@ -10,23 +10,24 @@
   &__text {
     position: absolute;
     left: 15px;
-    height: fit-content;
-    bottom: 0;
     top: 100px;
+    bottom: 0;
     margin: auto 0;
     z-index: 10;
+    height: fit-content;
 
-    & h1 {
+    h1 {
       font-weight: 500;
       font-size: 64px;
       line-height: 100%;
       color: #fff;
       opacity: 0;
       transform: translateY(100%);
-      animation: fadeIn 2s;
+      animation: fade-in 2s;
       animation-fill-mode: forwards;
     }
-    & span {
+
+    span {
       display: block;
       font-weight: 300;
       font-size: 48px;
@@ -34,48 +35,45 @@
       color: #fff;
       opacity: 0;
       transform: translateY(100%);
-      animation: fadeIn 1.5s;
+      animation: fade-in 1.5s;
       animation-delay: 2s;
       animation-fill-mode: forwards;
     }
   }
 
   &__bg {
-    object-fit: cover;
     position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    right: 0;
+    inset: 0;
     width: 100%;
     height: 100%;
+    object-fit: cover;
   }
 
   &__bottom {
-    cursor: pointer;
     position: absolute;
-    z-index: 10;
     bottom: 40px;
     left: 0;
     right: 0;
     margin: 0 auto;
+    z-index: 10;
+    cursor: pointer;
     width: 21px;
     height: 63px;
 
-    & svg {
+    svg {
       stroke: #fff;
       width: 100%;
       height: 100%;
     }
 
     &-line {
-      color: #fff;
+      position: relative;
       width: 1px;
       height: 16px;
-      background: #fff;
       margin: 0 auto;
       margin-top: -32px;
-      position: relative;
+      background: #fff;
+      color: #fff;
       z-index: 10;
       animation: move 3s infinite;
     }
@@ -84,7 +82,8 @@
 
 .desc {
   margin-top: 100px;
-  & span {
+
+  span {
     font-weight: 300;
     font-size: 48px;
     line-height: 140%;
@@ -104,7 +103,7 @@
   }
 }
 
-@keyframes fadeIn {
+@keyframes fade-in {
   0% {
     opacity: 0;
     transform: translateY(100%);

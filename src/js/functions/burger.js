@@ -10,6 +10,8 @@ import { enableScroll } from '../functions/enable-scroll.js';
   burger?.addEventListener('click', (e) => {
     burger?.classList.toggle('burger--active');
     menu?.classList.toggle('menu--active');
+    console.log(123);
+
 
     if (menu?.classList.contains('menu--active')) {
       burger?.setAttribute('aria-expanded', 'true');

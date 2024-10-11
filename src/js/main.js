@@ -1,8 +1,57 @@
 import './libs/locomotive-scroll.min.js'
+import './_functions.js';
 import './_components.js';
+import { disableScroll } from './functions/disable-scroll.js';
+import { enableScroll } from './functions/enable-scroll.js';
+import { getHeaderHeight } from './functions/header-height.js';
+
+getHeaderHeight();
+
+(function(){
+  const burger = document?.querySelector('[data-burger]');
+  const menu = document?.querySelector('[data-menu]');
+  const menuItems = document?.querySelectorAll('[data-menu-item]');
+  const overlay = document?.querySelector('[data-menu-overlay]');
+
+  burger?.addEventListener('click', (e) => {
+    burger?.classList.toggle('burger--active');
+    menu?.classList.toggle('menu--active');
+    console.log(123);
+
+
+    if (menu?.classList.contains('menu--active')) {
+      burger?.setAttribute('aria-expanded', 'true');
+      burger?.setAttribute('aria-label', 'Закрыть меню');
+      disableScroll();
+    } else {
+      burger?.setAttribute('aria-expanded', 'false');
+      burger?.setAttribute('aria-label', 'Открыть меню');
+      enableScroll();
+    }
+  });
+
+  overlay?.addEventListener('click', () => {
+    burger?.setAttribute('aria-expanded', 'false');
+    burger?.setAttribute('aria-label', 'Открыть меню');
+    burger.classList.remove('burger--active');
+    menu.classList.remove('menu--active');
+    enableScroll();
+  });
+
+  menuItems?.forEach(el => {
+    el.addEventListener('click', () => {
+      burger?.setAttribute('aria-expanded', 'false');
+      burger?.setAttribute('aria-label', 'Открыть меню');
+      burger.classList.remove('burger--active');
+      menu.classList.remove('menu--active');
+      enableScroll();
+    });
+  });
+})();
+
 
 // Инициализация Locomotive Scroll
-const locomotiveScroll = new LocomotiveScroll();
+// const locomotiveScroll = new LocomotiveScroll();
 
 // Прокрутка к блоку по нажатию на кнопку
 const scrollContainer = document.querySelector('[data-scroll-container]');
@@ -21,6 +70,7 @@ if (scrollContainer) {
     });
   }
 }
+
 // const scrollButton = document.querySelector('.hero__bottom');
 
 // if (scrollButton) {
@@ -30,3 +80,11 @@ if (scrollContainer) {
 //     scroll.scrollTo(scrollingBlock.scrollHeight);
 //   });
 // }
+
+// import './libs/bvi.min.js'
+
+// new isvek.Bvi({
+//   fontSize: 24, // Размер шрифта
+//   theme: 'black' // Цветовая тема сайта
+// });
+

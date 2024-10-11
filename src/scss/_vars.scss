@@ -2,12 +2,35 @@
 // colors
 :root {
   // base
-  --font-family: "Open Sans", sans-serif;
-  --content-width: 1748px;
-  --container-offset: 15px;
+  --font-family: "TTCommons", sans-serif;
+  --content-width: 100%;
+  --container-offset: 80px;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
 
   // colors
+  --black-color: #2B2B2B;
   --light-color: #fff;
   --brown-color: #8b714b;
+  --purple-color: #694b8b;
+  --green-color: #196855;
+  --blue-color: #004aa1;
+  --gray-color: #888888;
+}
+
+@media (max-width: (1600px)) {
+  :root {
+    --container-offset: 60px;
+  }
+}
+
+@media (max-width: (1600px)) {
+  :root {
+    --container-offset: 60px;
+  }
+}
+
+@media (max-width: (768px)) {
+  :root {
+    --container-offset: 20px;
+  }
 }

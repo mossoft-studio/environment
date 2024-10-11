@@ -21,7 +21,7 @@
 // import './functions/fix-fullheight';
 
 // Реализация бургер-меню
-// import { burger } from './functions/burger';
+// import { burger } from './functions/burger.js';
 
 // Реализация остановки скролла (не забудьте вызвать функцию)
 // import { disableScroll } from './functions/disable-scroll';
@@ -58,8 +58,8 @@
 // });
 
 // Подключение анимаций по скроллу
-import AOS from 'aos';
-AOS.init();
+// import AOS from 'aos';
+// AOS.init();
 
 // Подключение параллакса блоков при скролле
 // import Rellax from 'rellax';

@@ -104,3 +104,53 @@ ul {
   margin: 0;
   padding: 0;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+.main {
+  padding-bottom: 120px;
+}
+
+.section {
+  margin-top: 120px;
+
+  & h2 {
+    font-size: 64px;
+    line-height: 100%;
+    color: var(--black-color);
+    font-weight: 500;
+  }
+
+  & > div {
+    margin-top: 40px;
+  }
+}
+
+@include big-desktop {
+  .section {
+    & h2 {
+      font-size: 58px;
+    }
+  }
+}
+
+@include small-tablet {
+  .section {
+    margin-top: 80px;
+
+    & h2 {
+      font-size: 26px;
+    }
+
+    & > div {
+      margin-top: 30px;
+    }
+  }
+}

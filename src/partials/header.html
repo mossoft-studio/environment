@@ -2,8 +2,6 @@
   <div class="container header__inner">
     <a href="#" title="Главная страница" class="header__logo">
       <svg
-        width="160"
-        height="38"
         viewBox="0 0 160 38"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -94,8 +92,46 @@
         />
       </svg>
     </a>
+    <div class="header__right">
+      <nav class="header__nav">
+        <!-- <a href="#" class="bvi-open" title="Версия сайта для слабовидящих">Версия сайта для слабовидящих</a> -->
+        <ul>
+          <li><a href="#">Проекты</a></li>
+          <li><a href="#">Жильё</a></li>
+          <li><a href="#">Еда</a></li>
+          <li><a href="#">Наука</a></li>
+          <li><a href="#">О компании</a></li>
+          <li><a href="#">Пресс-центр</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="header__social">
+        <a href="#">
+          <svg class="">
+            <use xlink:href="img/sprite.svg#vk"></use>
+          </svg>
+        </a>
+        <a href="#">
+          <svg class="">
+            <use xlink:href="img/sprite.svg#tg"></use>
+          </svg>
+        </a>
+      </div>
+      <button
+        class="btn-reset burger"
+        aria-label="Открыть меню"
+        aria-expanded="false"
+        data-burger
+      >
+        <span class="burger__line"></span>
+      </button>
+    </div>
+  </div>
+
+  <div class="burger__menu" data-menu>
     <nav class="">
       <ul>
+        <li><a href="#">Проекты</a></li>
         <li><a href="#">Жильё</a></li>
         <li><a href="#">Еда</a></li>
         <li><a href="#">Наука</a></li>
@@ -104,7 +140,7 @@
         <li><a href="#">Контакты</a></li>
       </ul>
     </nav>
-    <div class="header__social">
+    <div class="header__social" style="margin-top: 40px;">
       <a href="#">
         <svg class="">
           <use xlink:href="img/sprite.svg#vk"></use>

@@ -21,14 +21,18 @@
     padding: 180px 230px;
     text-align: center;
     margin: 0;
+    color: var(--black-color);
   }
 }
 
 @include tablet {
   .quote {
     p {
-      padding: 100px 60px;
       font-size: 36px;
+      line-height: 44px;
+      max-width: 80%;
+      padding: 140px 0;
+      margin: 0 auto;
     }
   }
 }
@@ -36,9 +40,14 @@
 @include small-tablet {
   .quote {
     p {
-      padding: 40px 20px;
+      padding: 40px 0;
       font-size: 16px;
       line-height: 18.4px;
+    }
+    svg {
+      width: 29px;
+      height: 16px;
+      top: -8px;
     }
   }
 }

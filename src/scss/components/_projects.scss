@@ -1,0 +1,151 @@
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+
+  &__card {
+    display: grid;
+    grid-template-columns: 48.5% 51.5%;
+    gap: 0;
+    grid-column: span 2;
+
+    & .card__wrapper {
+      border-right: 1px solid var(--brown-color);
+      border-top: 1px solid var(--brown-color);
+      border-bottom: 1px solid var(--brown-color);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 40px;
+    }
+
+    & .card__img {
+      height: 100%;
+    }
+
+    & .card__footer {
+      margin-top: 60px;
+    }
+
+    & .card__body {
+      gap: 20px;
+
+      & span {
+        -webkit-line-clamp: 6;
+      }
+    }
+  }
+
+  &-more {
+    display: block;
+    padding: 40px;
+    position: relative;
+
+    &:hover {
+      & .card__link {
+        &-base {
+          transform: translateX(100%);
+        }
+
+        &-hover {
+          transform: translateX(0);
+        }
+      }
+    }
+
+    & .card__body {
+      max-width: 300px;
+    }
+
+    & h3 {
+      color: #fff;
+      -webkit-line-clamp: 4;
+    }
+
+    &__link {
+      position: absolute;
+      bottom: 40px;
+      right: 40px;
+      height: 15px;
+    }
+  }
+}
+
+@include big-desktop {
+  .projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+}
+
+@include tablet {
+  .projects {
+    gap: 30px;
+
+    &-more {
+      padding: 30px;
+
+      &__link {
+        bottom: 30px;
+        right: 30px;
+      }
+    }
+
+    &__card {
+      & .card__wrapper {
+        padding: 30px;
+      }
+    }
+  }
+}
+
+@include small-tablet {
+  .projects {
+    grid-template-columns: 1fr;
+    gap: 20px;
+
+    &-more {
+      padding: 20px;
+      height: 60vw;
+      min-height: 220px;
+
+      &__link {
+        bottom: 20px;
+        right: 20px;
+      }
+    }
+
+    &__card {
+      display: flex;
+      gap: 0;
+
+      grid-column: span 1; /// rfefefw
+
+      & .card__wrapper {
+        border: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        padding: 0px; // fewfewfwe
+        margin-top: 12px;
+      }
+
+      & .card__img {
+        height: 44vw;
+      }
+
+      & .card__footer {
+        margin-top: 18px;
+      }
+
+      & .card__body {
+        gap: 4px;
+
+        & span {
+          -webkit-line-clamp: 2;
+        }
+      }
+    }
+  }
+}

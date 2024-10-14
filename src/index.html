@@ -4,7 +4,7 @@
 
   <body class="page__body">
     <div class="site-container">
-      @include('partials/header.html', {color: '#ff0000'})
+      @include('partials/header.html', { "color":  "var(--brown-color)" })
       <main class="main bvi-hide" data-scroll-container>
         <section class="hero">
           <div class="container">
@@ -159,6 +159,10 @@
           <h2>Проекты</h2>
           <div class="">
             @include('partials/global/projects.html')
+            <div class="all-link">
+              <a href="#">Все кейсы</a>
+              <div class="all-link__line" style="background-color: var(--brown-color);"></div>
+            </div>
           </div>
         </section>
       </main>

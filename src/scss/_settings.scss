@@ -38,7 +38,8 @@ a {
 }
 
 .is-hidden {
-  display: none !important; /* stylelint-disable-line declaration-no-important */
+  display: none !important;
+  /* stylelint-disable-line declaration-no-important */
 }
 
 .btn-reset {
@@ -119,6 +120,14 @@ h6 {
   margin: 0;
 }
 
+.title {
+  font-size: 200px;
+  line-height: 230px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--brown-color);
+}
+
 .main {
   padding-bottom: 120px;
 }
@@ -133,7 +142,7 @@ h6 {
     font-weight: 500;
   }
 
-  & > div {
+  &>div {
     margin-top: 40px;
   }
 }
@@ -176,6 +185,13 @@ h6 {
   }
 }
 
+@include tablet {
+  .title {
+    font-size: 122px;
+    line-height: 140px;
+  }
+}
+
 @include small-tablet {
   .all-link {
     margin-top: 32px;
@@ -185,6 +201,11 @@ h6 {
     }
   }
 
+
+  .title {
+    font-size: 40px;
+    line-height: 46px
+  }
   .section {
     margin-top: 80px;
 
@@ -192,8 +213,12 @@ h6 {
       font-size: 26px !important;
     }
 
-    & > div {
+    &>div {
       margin-top: 30px;
     }
+  }
+
+  .main {
+    padding-bottom: 80px;
   }
 }

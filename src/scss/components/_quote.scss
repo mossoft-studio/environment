@@ -1,0 +1,44 @@
+.quote {
+  border: 1px solid var(--brown-color);
+  position: relative;
+
+  svg {
+    width: 54px;
+    height: 30px;
+    fill: var(--brown-color);
+    position: absolute;
+    top: -15px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+  }
+
+  p {
+    font-size: 48px;
+    line-height: 54px;
+    font-weight: 300;
+    padding: 180px 230px;
+    text-align: center;
+    margin: 0;
+  }
+}
+
+@include tablet {
+  .quote {
+    p {
+      padding: 100px 60px;
+      font-size: 36px;
+    }
+  }
+}
+
+@include small-tablet {
+  .quote {
+    p {
+      padding: 40px 20px;
+      font-size: 16px;
+      line-height: 18.4px;
+    }
+  }
+}

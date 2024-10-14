@@ -1,0 +1,54 @@
+.housing {
+
+  padding-top: 60px;
+
+  &__title {
+    display: flex;
+    justify-content: space-between;
+    gap: 221px;
+    align-items: center;
+
+    >p {
+      font-weight: 300;
+      font-size: 22px;
+      line-height: 26px;
+      color: var(--gray-color);
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin: 0;
+    }
+  }
+}
+
+.slider {
+  margin-top: 20px;
+}
+
+@include tablet {
+  .housing {
+    &__title {
+      >p {
+        font-size: 20px;
+        line-height: 23px;
+      }
+    }
+  }
+}
+
+
+@include small-tablet {
+  .housing {
+    padding-top: 40px;
+    &__title {
+      flex-direction: column;
+      gap: 8px;
+      align-items: start;
+      >p {
+        font-size: 16px;
+        line-height: 18.4px;
+      }
+    }
+  }
+}

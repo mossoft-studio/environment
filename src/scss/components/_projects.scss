@@ -40,8 +40,16 @@
     display: block;
     padding: 40px;
     position: relative;
+    background-color: var(--brown-color);
+    transition: all 0.4s;
 
     &:hover {
+      background-color: var(--brown-light-color);
+
+      & .projects-more__logo {
+        fill: var(--brown-color);
+      }
+
       & .card__link {
         &-base {
           transform: translateX(100%);
@@ -53,8 +61,22 @@
       }
     }
 
+    &__logo {
+      position: absolute;
+      width: 273px;
+      height: 296px;
+      right: 40px;
+      top: 0;
+      bottom: 0;
+      margin: auto 0;
+      fill: var(--brown-light-color);
+      transition: all 0.4s;
+    }
+
     & .card__body {
       max-width: 300px;
+      position: relative;
+      z-index: 2;
     }
 
     & h3 {
@@ -67,6 +89,7 @@
       bottom: 40px;
       right: 40px;
       height: 15px;
+      z-index: 2;
     }
   }
 }
@@ -88,6 +111,12 @@
 
       &__link {
         bottom: 30px;
+        right: 30px;
+      }
+
+      &__logo {
+        width: 253px;
+        height: 276px;
         right: 30px;
       }
     }
@@ -112,6 +141,12 @@
 
       &__link {
         bottom: 20px;
+        right: 20px;
+      }
+
+      &__logo {
+        width: 142px;
+        height: 154px;
         right: 20px;
       }
     }

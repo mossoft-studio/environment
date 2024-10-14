@@ -79,7 +79,6 @@
   <a
     href="#"
     class="projects-more"
-    style="background-color: var(--brown-color)"
   >
     <div class="card__body">
       <h3>
@@ -113,9 +112,12 @@
         <use xlink:href="img/sprite.svg#arrowRight"></use>
       </svg>
     </div>
+    <svg class="projects-more__logo">
+      <use xlink:href="img/sprite.svg#logoBig"></use>
+    </svg>
   </a>
 
-  @include('card.html', {"color": "var(--brown-color)"}) @include('card.html',
-  {"color": "var(--brown-color)"}) @include('card.html', {"color":
-  "var(--brown-color)"})
+  @include('card.html', {"color": "var(--brown-color)"})
+  @include('card.html', {"color": "var(--brown-color)"})
+  @include('card.html', {"color": "var(--brown-color)"})
 </div>

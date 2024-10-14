@@ -5,6 +5,32 @@ import { disableScroll } from './functions/disable-scroll.js';
 import { enableScroll } from './functions/enable-scroll.js';
 import { getHeaderHeight } from './functions/header-height.js';
 
+import Swiper from 'swiper';
+import { Navigation } from 'swiper/modules';
+
+// Инициализация слайдера
+
+Swiper.use([Navigation])
+
+const customSlider = new Swiper('.custom-slider', {
+    slidesPerView: 1.57,
+    spaceBetween: 40,
+    loop: true,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+      320: {
+        spaceBetween: 8
+      },
+      720:  {
+        spaceBetween: 40
+      }
+    }
+});
+
+
 getHeaderHeight();
 
 (function(){
@@ -87,4 +113,5 @@ if (scrollContainer) {
 //   fontSize: 24, // Размер шрифта
 //   theme: 'black' // Цветовая тема сайта
 // });
+
 

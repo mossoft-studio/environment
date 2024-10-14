@@ -38,6 +38,15 @@
       align-items: center;
       gap: 80px;
 
+      & li.active {
+        a {
+          &::after {
+            opacity: 1;
+            visibility: visible;
+          }
+        }
+      }
+
       a {
         position: relative;
         font-weight: 300;

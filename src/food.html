@@ -4,11 +4,11 @@
 
 <body class="page__body">
   <div class="site-container">
-    @include('partials/header.html', {"color": "var(--purple-color)", "text": "жильё" })
+    @include('partials/header.html', {"color": "var(--green-color)", "text": "еда" })
     <main class="main bvi-hide first-block" data-scroll-container>
       <section class="housing">
         <div class="container housing__title">
-          <h3 class="title" style="color: var(--purple-color)">Жильё</h2>
+          <h3 class="title" style="color: var(--green-color)">еда</h2>
           <p>Мы любим животных и стараемся поддерживать тех из них, кому не посчастливилось иметь ласковых хозяев и тёплый кров. Один из проверенных способов это сделать — помочь благотворительному фонду «Луч Добра». Благодаря их труду ежегодно сотни питомцев находят свой новый дом.</p>
         </div>
 
@@ -16,39 +16,39 @@
 
       <section class="slider">
         @include('partials/global/slider.html')
-        @include('partials/global/info.html', {"color": "var(--purple-color)"})
+        @include('partials/global/info.html', {"color": "var(--green-color)"})
       </section>
 
       <section class="section container">
         <h2>Проекты / жильё</h2>
         <div class="">
           <div class="projects">
-            @include('partials/global/card.html', {"color": "var(--purple-color)"})
-            @include('partials/global/card.html', {"color": "var(--purple-color)"})
-            @include('partials/global/card.html', {"color": "var(--purple-color)"})
+            @include('partials/global/card.html', {"color": "var(--green-color)"})
+            @include('partials/global/card.html', {"color": "var(--green-color)"})
+            @include('partials/global/card.html', {"color": "var(--green-color)"})
           </div>
           <div class="all-link">
             <a href="#">Все проекты</a>
-            <div class="all-link__line" style="background-color: var(--purple-color);"></div>
+            <div class="all-link__line" style="background-color: var(--green-color);"></div>
           </div>
         </div>
       </section>
 
       <section class="section">
-        @include('partials/global/quote.html', {"color": "var(--purple-color)"})
+        @include('partials/global/quote.html', {"color": "var(--green-color)"})
       </section>
 
       <section class="section container">
         <h2>Новости</h2>
         <div class="">
           <div class="projects">
-            @include('partials/global/card.html', {"color": "var(--purple-color)"})
-            @include('partials/global/card.html', {"color": "var(--purple-color)"})
-            @include('partials/global/card.html', {"color": "var(--purple-color)"})
+            @include('partials/global/card.html', {"color": "var(--green-color)"})
+            @include('partials/global/card.html', {"color": "var(--green-color)"})
+            @include('partials/global/card.html', {"color": "var(--green-color)"})
           </div>
           <div class="all-link">
             <a href="#">Все новости</a>
-            <div class="all-link__line" style="background-color: var(--purple-color);"></div>
+            <div class="all-link__line" style="background-color: var(--green-color);"></div>
           </div>
         </div>
       </section>
@@ -56,7 +56,7 @@
     </main>
 
 
-    @include('partials/footer.html', {"color": "var(--purple-color)", "purpleLogo": "#876FA2", "text": "Жильё" })
+    @include('partials/footer.html', {"color": "var(--green-color)", "purpleLogo": "var(--green-light-color)", "text": "еда" })
   </div>
 </body>
 

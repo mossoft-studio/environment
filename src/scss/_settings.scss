@@ -171,6 +171,10 @@ h6 {
   }
 }
 
+.first-block {
+  margin-top: var(--header-height);
+}
+
 
 @include big-desktop {
   .all-link {

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+@include('partials/head.html')
+
+<body class="page__body">
+  <div class="site-container">
+    @include('partials/header.html', {"color": "var(--brown-color)", "text": "" })
+    <main class="main bvi-hide first-block" data-scroll-container>
+      <section class="housing">
+        <div class="container housing__title">
+          <h3 class="title" style="color: var(--brown-color)">Жильё</h2>
+        </div>
+      </section>
+
+      <section class="section container">
+        @include('partials/global/projects.html')
+      </section>
+
+      <section class="section container">
+        <h2>Архив новостей</h2>
+        <div class="">
+          <div class="projects">
+            @include('partials/global/card.html', {"color": "var(--brown-color)"})
+            @include('partials/global/card.html', {"color": "var(--brown-color)"})
+            @include('partials/global/card.html', {"color": "var(--brown-color)"})
+            @include('partials/global/card.html', {"color": "var(--brown-color)"})
+            @include('partials/global/card.html', {"color": "var(--brown-color)"})
+            @include('partials/global/card.html', {"color": "var(--brown-color)"})
+            @include('partials/global/card.html', {"color": "var(--brown-color)"})
+            @include('partials/global/card.html', {"color": "var(--brown-color)"})
+            @include('partials/global/card.html', {"color": "var(--brown-color)"})
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+
+    @include('partials/footer.html', {"color": "var(--brown-color)", "purpleLogo": "var(--brown-light-color)", "text": "Жильё" })
+  </div>
+</body>
+
+</html>

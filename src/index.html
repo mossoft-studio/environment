@@ -159,6 +159,26 @@
           <h2>Проекты</h2>
           <div class="">
             @include('partials/global/projects.html')
+            <div class="all-link">
+              <a href="#">Все кейсы</a>
+              <div class="all-link__line" style="background-color: var(--brown-color);"></div>
+            </div>
+          </div>
+        </section>
+        <section class="section container">
+          <h2>Направления</h2>
+          <div class="projects">
+            @include('partials/global/direction.html', {"color": "var(--purple-color)", "title": "жилье"})
+            @include('partials/global/direction.html', {"color": "var(--green-color)", "title": "еда"})
+            @include('partials/global/direction.html', {"color": "var(--blue-color)", "title": "наука"})
+          </div>
+        </section>
+        <section class="section container">
+          <h2>Главные новости</h2>
+          <div class="projects">
+            @include('partials/global/card.html', {"color": "var(--brown-color)"})
+            @include('partials/global/card.html', {"color": "var(--brown-color)"})
+            @include('partials/global/card.html', {"color": "var(--brown-color)"})
           </div>
         </section>
         <section class="section">

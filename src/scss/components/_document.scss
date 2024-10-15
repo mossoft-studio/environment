@@ -4,6 +4,35 @@
   flex-direction: column;
   height: 300px;
 
+  &__link {
+    position: relative;
+    overflow: hidden;
+    width: 22px;
+    height: 25px;
+
+    & svg {
+      width: 100%;
+      height: 100%;
+    }
+
+    &-long {
+      display: none;
+    }
+
+    &-hover {
+      transform: translateY(-200%);
+      transition: transform 0.3s ease;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    &-base {
+      transform: translate(0);
+      transition: transform 0.3s ease;
+    }
+  }
+
   &:hover {
     border-color: var(--brown-light-color);
 
@@ -12,11 +41,18 @@
       transition: opacity 0.3s ease-in-out;
     }
 
-    & svg {
-      margin-top: 7px;
-      transition: margin-top 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+    & .document__link {
+      &-base {
+        transform: translateY(100%);
+      }
+
+      &-hover {
+        transform: translateY(0);
+      }
     }
   }
+
+
 
   >div {
     height: 100%;
@@ -39,10 +75,12 @@
     padding-right: 40px;
 
     span {
+      position: relative;
       display: flex;
       justify-content: end;
       align-items: center;
       gap: 12px;
+      overflow: hidden;
 
       p {
         color: var(--light-color);
@@ -54,14 +92,14 @@
         width: 25px;
         height: 25px;
         fill: var(--light-color);
-        transform: rotate(90deg);
+        overflow: hidden;
       }
     }
   }
 }
 
 
-@include small-tablet {
+@include tablet {
   .document {
     height: 158px;
 

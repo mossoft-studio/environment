@@ -39,25 +39,38 @@
         <section class="section">
           <div class="container map">
             <p>География</p>
-            <img src="img/map.png" alt="">
+            <img src="img/map.svg" alt="">
           </div>
         </section>
         <section class="section">
           @include('partials/global/docs.html')
-          <div class="container ">
-            <div class="info__container">
-              <div class="info__text">
-                <p>Уважаемые посетители!</p>
-                <p>Предлагаем вам ознакомиться с финансово-хозяйственной деятельностьюна официальном сайте для
-                  размещение информациио государственных (муниципальных) услугах</p>
-              </div>
-              <div class="info__button">
-                <svg class="">
-                  <use xlink:href="img/sprite.svg#arrowRight"></use>
-                </svg>
+          <a href="#">
+            <div class="container ">
+              <div class="info__container">
+                <div class="info__text">
+                  <p>Уважаемые посетители!</p>
+                  <p>Предлагаем вам ознакомиться с финансово-хозяйственной деятельностьюна официальном сайте для
+                    размещение информациио государственных (муниципальных) услугах</p>
+                </div>
+                <div class="info__button">
+                  <div class="card__link">
+                    <svg class="card__link card__link-long card__link-hover" style="fill: var(--light-color);">
+                      <use xlink:href="img/sprite.svg#arrowRightLong"></use>
+                    </svg>
+                    <svg class="card__link card__link-long card__link-base" style="fill: var(--light-color);">
+                      <use xlink:href="img/sprite.svg#arrowRightLong"></use>
+                    </svg>
+                    <svg class="card__link card__link-short card__link-hover" style="fill: var(--light-color);">
+                      <use xlink:href="img/sprite.svg#arrowRight"></use>
+                    </svg>
+                    <svg class="card__link card__link-short card__link-base" style="fill: var(--light-color);">
+                      <use xlink:href="img/sprite.svg#arrowRight"></use>
+                    </svg>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
+          </a>
         </section>
 
       </section>

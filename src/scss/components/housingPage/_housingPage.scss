@@ -5,7 +5,7 @@
   &__title {
     display: flex;
     justify-content: space-between;
-    gap: 221px;
+    gap: 11vw;
     align-items: center;
 
     >p {
@@ -19,7 +19,15 @@
       text-overflow: ellipsis;
       margin: 0;
       max-width: 40%;
+      >a {
+        font-weight: 300;
+        font-size: 22px;
+        line-height: 26px;
+        color: var(--gray-color);
+        text-decoration: underline;
+      }
     }
+
   }
 }
 

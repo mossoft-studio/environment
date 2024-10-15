@@ -13,27 +13,27 @@ import { Navigation } from 'swiper/modules';
 Swiper.use([Navigation])
 
 const customSlider = new Swiper('.custom-slider', {
-    slidesPerView: 1.57,
-    spaceBetween: 40,
-    loop: true,
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+  slidesPerView: 1.57,
+  spaceBetween: 40,
+  loop: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  breakpoints: {
+    320: {
+      spaceBetween: 8
     },
-    breakpoints: {
-      320: {
-        spaceBetween: 8
-      },
-      720:  {
-        spaceBetween: 40
-      }
+    720: {
+      spaceBetween: 40
     }
+  }
 });
 
 
 getHeaderHeight();
 
-(function(){
+(function () {
   const burger = document?.querySelector('[data-burger]');
   const menu = document?.querySelector('[data-menu]');
   const menuItems = document?.querySelectorAll('[data-menu-item]');
@@ -74,6 +74,16 @@ getHeaderHeight();
     });
   });
 })();
+
+const buttons = document.querySelectorAll('.button');
+
+buttons.forEach(button => {
+  button.addEventListener('click', function () {
+    buttons.forEach(btn => btn.classList.remove('active'));
+
+    this.classList.add('active');
+  });
+});
 
 
 // Инициализация Locomotive Scroll

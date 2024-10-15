@@ -1,0 +1,89 @@
+.document {
+  border: 1px solid var(--brown-color);
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+
+  &:hover {
+    border-color: var(--brown-light-color);
+
+    & .document__download {
+      opacity: 0.8;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    & svg {
+      margin-top: 7px;
+      transition: margin-top 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+  }
+
+  >div {
+    height: 100%;
+    padding: 40px;
+    padding-bottom: 0;
+  }
+
+  p {
+    font-size: 32px;
+    line-height: 36px;
+    font-weight: 300;
+    margin: 0;
+  }
+
+  &__download {
+    display: flex;
+    background-color: var(--brown-color);
+    height: 100px;
+    justify-content: end;
+    padding-right: 40px;
+
+    span {
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      gap: 12px;
+
+      p {
+        color: var(--light-color);
+        margin: 0;
+
+      }
+
+      svg {
+        width: 25px;
+        height: 25px;
+        fill: var(--light-color);
+        transform: rotate(90deg);
+      }
+    }
+  }
+}
+
+
+@include small-tablet {
+  .document {
+    height: 158px;
+
+    >div {
+      padding: 20px 20px 0 20px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 20.7px;
+    }
+
+    &__download {
+      height: 56px;
+
+      span {
+        gap: 8px;
+
+        svg {
+          width: 18px;
+        }
+      }
+    }
+  }
+}

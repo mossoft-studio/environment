@@ -36,9 +36,14 @@
   &:hover {
     border-color: var(--brown-light-color);
 
+
+
     & .document__download {
       opacity: 0.8;
       transition: opacity 0.3s ease-in-out;
+      span p {
+        border-bottom: 1px solid var(--light-color);
+      }
     }
 
     & .document__link {
@@ -85,6 +90,8 @@
       p {
         color: var(--light-color);
         margin: 0;
+        height: 29px;
+
 
       }
 
@@ -110,6 +117,7 @@
     p {
       font-size: 18px;
       line-height: 20.7px;
+
     }
 
     &__download {
@@ -117,6 +125,10 @@
 
       span {
         gap: 8px;
+
+        p {
+          height: 18px;
+        }
 
         svg {
           width: 18px;

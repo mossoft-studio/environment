@@ -88,11 +88,10 @@
 
   }
 
-  &__text {
+  &__textblock {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    max-width: none;
     padding: 47.5px 0 47.5px 40px;
 
     p {
@@ -129,8 +128,8 @@
   }
 
   .info {
-    &__text {
-      max-width: 60%;
+    &__textblock {
+      // max-width: 60%;
     }
   }
 }
@@ -176,7 +175,7 @@
       margin-top: 40px;
     }
 
-    &__text {
+    &__textblock {
       max-width: none;
       padding: 20px 20px 40px 20px;
 

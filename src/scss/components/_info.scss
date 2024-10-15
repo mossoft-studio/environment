@@ -7,16 +7,20 @@
     font-size: 36px;
     line-height: 48px;
     color: var(--black-color);
-    max-width: 55%;
     width: 100%;
     font-weight: 300;
+  }
+  &__text {
+    max-width: 55%;
   }
 }
 
 @include tablet {
   .info{
-    p {
+    &__text {
       max-width: 80%;
+    }
+    p {
       font-size: 32px;
       line-height: 38px;
     }

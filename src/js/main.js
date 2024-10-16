@@ -5,11 +5,12 @@ import { disableScroll } from './functions/disable-scroll.js';
 import { enableScroll } from './functions/enable-scroll.js';
 import { getHeaderHeight } from './functions/header-height.js';
 
+import AOS from 'aos';
+
 import Swiper from 'swiper';
 import { Navigation } from 'swiper/modules';
 
 // Инициализация слайдера
-
 Swiper.use([Navigation])
 
 const customSlider = new Swiper('.custom-slider', {
@@ -87,7 +88,7 @@ buttons.forEach(button => {
 
 
 // Инициализация Locomotive Scroll
-// const locomotiveScroll = new LocomotiveScroll();
+const locomotiveScroll = new LocomotiveScroll();
 
 // Прокрутка к блоку по нажатию на кнопку
 const scrollContainer = document.querySelector('[data-scroll-container]');
@@ -106,6 +107,24 @@ if (scrollContainer) {
     });
   }
 }
+
+AOS.init();
+
+document.querySelectorAll('.animate-on-load').forEach(function (element) {
+  element.classList.add('aos-animate');
+});
+
+document.addEventListener("scroll", function() {
+  const sectionHeaders = document.querySelectorAll('.section__header');
+
+  sectionHeaders.forEach((sectionHeader) => {
+    if (sectionHeader.getBoundingClientRect().top <= 0) {
+      sectionHeader.classList.add('fixed');
+    } else {
+      sectionHeader.classList.remove('fixed');
+    }
+  });
+});
 
 // const scrollButton = document.querySelector('.hero__bottom');
 

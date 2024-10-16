@@ -35,7 +35,7 @@ a {
 
 .site-container {
   height: 100%;
-  overflow: hidden; // если используете на сайте position: sticky - уберите эту настройку
+  // overflow: hidden; // если используете на сайте position: sticky - уберите эту настройку
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -139,11 +139,33 @@ h6 {
 .section {
   margin-top: 120px;
 
+  &__header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(20px);
+    z-index: 20;
+    padding: 4px 0;
+    transition: all 0.3s;
+
+    &.fixed {
+      background-color: #00000036;
+
+      & h2 {
+        color: #fff;
+      }
+    }
+  }
+
   & h2 {
     font-size: 64px;
     line-height: 100%;
     color: var(--black-color);
     font-weight: 500;
+    transition: all 0.3s;
   }
 
   &>div {

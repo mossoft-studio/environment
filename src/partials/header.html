@@ -125,12 +125,44 @@
           </svg>
         </a>
       </div>
-      <button
-        class="btn-reset burger"
-        aria-label="Открыть меню"
-        aria-expanded="false"
-        data-burger
-      >
+      <a id="specialButton" id='glazd' href="#"><img src="https://lidrekon.ru/images/special.png" id='glazd'
+          alt="ВЕРСИЯ ДЛЯ СЛАБОВИДЯЩИХ" title="ВЕРСИЯ ДЛЯ СЛАБОВИДЯЩИХ" /></a>
+      <style>
+        @media screen and (max-width: 980px) {
+          #glazd {
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            z-index: 15;
+            width: 50px;
+          }
+
+          #specialButton {
+            position: relative;
+            z-index: 15;
+            width: 50px;
+            height: 30px;
+          }
+        }
+
+        @media screen and (min-width: 980px) {
+          #glazd {
+            position: absolute;
+            top: 0px;
+            left: 0;
+            z-index: 15;
+            width: 50px;
+          }
+
+          #specialButton {
+            position: relative;
+            z-index: 15;
+            width: 50px;
+            height: 30px;
+          }
+        }
+      </style>
+      <button class="btn-reset burger" aria-label="Открыть меню" aria-expanded="false" data-burger>
         <span class="burger__line"></span>
       </button>
     </div>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+@include('partials/head.html')
+
+<body class="page__body">
+  <div class="site-container">
+    @include('partials/header.html', {"color": "var(--brown-color)", "text": "" })
+    <main class="main bvi-hide first-block" data-scroll-container>
+      <section class="housing projects__wrap">
+        <div class="container housing__title contacts__title">
+          <h3 class="title" style="color: var(--brown-color)">КОНТАКТЫ</h3>
+          <p>Мы любим животных и стараемся поддерживать тех из них, кому не посчастливилось иметь ласковых хозяев и
+            тёплый кров. Один из проверенных способов это сделать — помочь благотворительному фонду <a
+              href="https://luchdobrafound.ru/">«Луч Добра»</a>.
+            Благодаря их труду ежегодно сотни питомцев находят свой новый дом.
+          </p>
+        </div>
+        <div class="container">
+          <div class="projects">
+            <div class="contacts-card">
+              <div class="contacts-card__text">
+                <span class="contacts-card__title">Иванов Иван Иванович</span>
+                <span class="contacts-card__desc">Должность</span>
+              </div>
+              <div class="contacts-card__links">
+                <a href="tel:+79787655456" class="contacts-card__title">+7 978 765 54 56</a>
+                <a href="mailto:II@ks.ru" class="contacts-card__title">II@ks.ru</a>
+              </div>
+            </div>
+            <div class="contacts-card">
+              <div class="contacts-card__text">
+                <span class="contacts-card__title">Пиар-департамент</span>
+                <span class="contacts-card__desc">Должность</span>
+              </div>
+              <div class="contacts-card__links">
+                <a href="tel:+79787655456" class="contacts-card__title">+7 978 765 54 56</a>
+                <a href="mailto:II@ks.ru" class="contacts-card__title">II@ks.ru</a>
+              </div>
+            </div>
+            <div class=""></div>
+            <div class="contacts-card" style="background-color: var(--green-color);">
+              <div class="contacts-card__text">
+                <span class="contacts-card__title">Комфортная среда / еда</span>
+              </div>
+              <div class="contacts-card__links">
+                <a href="mailto:eat@ks.ru" class="contacts-card__title">eat@ks.ru</a>
+              </div>
+            </div>
+            <div class="contacts-card" style="background-color: var(--blue-color);">
+              <div class="contacts-card__text">
+                <span class="contacts-card__title">Комфортная среда / наука</span>
+              </div>
+              <div class="contacts-card__links">
+                <a href="mailto:brean@ks.ru" class="contacts-card__title">brean@ks.ru</a>
+              </div>
+            </div>
+            <div class="contacts-card" style="background-color: var(--purple-color);">
+              <div class="contacts-card__text">
+                <span class="contacts-card__title">Комфортная среда / жилье</span>
+              </div>
+              <div class="contacts-card__links">
+                <a href="mailto:home@ks.ru" class="contacts-card__title">home@ks.ru</a>
+              </div>
+            </div>
+            <div class="contacts-card" style="background-color: #D9D9D9; color: var(--black-color);">
+              <div class="contacts-card__text">
+                <span class="contacts-card__title" style="color: var(--black-color);">Предложения и замечания </span>
+                <span class="contacts-card__desc" style="color: var(--black-color);">Если у Вас остались вопросы или предложения, напишите нам</span>
+              </div>
+              <div class="contacts-card__links">
+                <a href="mailto:help@ks.ru" class="contacts-card__title" style="color: var(--black-color);">help@ks.ru</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+    @include('partials/footer.html', {"color": "var(--brown-color)", "text": "" })
+
+  </div>
+</body>
+
+</html>

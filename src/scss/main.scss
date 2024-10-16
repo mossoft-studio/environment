@@ -1,3 +1,5 @@
+@import "./vendor/bvi";
+
 // базовые подключения
 @import "vars";
 @import "mixins";
@@ -17,9 +19,8 @@
 @import "./components/document";
 @import "./components/docs";
 
-@import "./vendor/bvi";
-
 @import "./components/housingPage/housingPage";
 @import "./components/aboutPage/aboutPage";
 @import "./components/projectPage/projectPage";
 @import "./components/projPage/projPage";
+@import "./components/contactsPage/contacts";

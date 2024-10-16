@@ -21,7 +21,7 @@
 
     &-hover {
       transform: translateY(-200%);
-      transition: transform 0.7s ease;
+      transition: transform 0.3s;
       position: absolute;
       left: 0;
       top: 0;
@@ -29,7 +29,7 @@
 
     &-base {
       transform: translate(0);
-      transition: transform 0.7s linear;
+      transition: transform 0.3s;
     }
   }
 
@@ -40,10 +40,9 @@
 
     & .document__download {
       opacity: 0.8;
-      transition: all 0.7s linear;
+      transition: all 0.3s;
       span p {
         border-color: var(--light-color);
-
       }
     }
 
@@ -90,10 +89,10 @@
 
       p {
         color: var(--light-color);
-        margin: 0;
-        height: 29px;
-        border-bottom: 1px solid var(--brown-color);
-        transition: border-color 0.7s ease;
+        margin-bottom: -4px;
+        // height: 29px;
+        border-bottom: 2px solid var(--brown-color);
+        transition: border-color 0.3s ease;
       }
 
       svg {

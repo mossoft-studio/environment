@@ -11746,6 +11746,13 @@ const customSlider = new swiper__WEBPACK_IMPORTED_MODULE_6__["default"]('.custom
     });
   });
 })();
+const buttons = document.querySelectorAll('.button');
+buttons.forEach(button => {
+  button.addEventListener('click', function () {
+    buttons.forEach(btn => btn.classList.remove('active'));
+    this.classList.add('active');
+  });
+});
 
 // Инициализация Locomotive Scroll
 // const locomotiveScroll = new LocomotiveScroll();
@@ -11787,3 +11794,4 @@ if (scrollContainer) {
 
 /******/ })()
 ;
+//# sourceMappingURL=main.js.map

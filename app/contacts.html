@@ -1,4 +1,23 @@
-<header class="header" style="background-color: @color;">
+<!DOCTYPE html>
+<html lang="ru" class="page">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>Комфортная среда</title>
+  <link rel="preload" href="fonts/TTCommons-Light.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/TTCommons-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/TTCommons-Medium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/main.js"></script>
+</head>
+
+<body class="page__body">
+  <div class="site-container">
+    <header class="header" style="background-color: var(--brown-color);">
   <div class="container header__inner">
     <!-- <a href="#" title="Главная страница" class="header__logo">
       <svg
@@ -93,7 +112,7 @@
       </svg>
     </a> -->
     <a href="/" class="footer__logo">
-      <span title="Главная страница">@text</span>
+      <span title="Главная страница"></span>
       <div title="Главная страница">
         <svg class="">
           <use xlink:href="img/sprite.svg#logo"></use>
@@ -108,7 +127,7 @@
           <li><a href="housing.html">Жильё</a></li>
           <li><a href="food.html">Еда</a></li>
           <li><a href="science.html">Наука</a></li>
-          <li><a href="about.html">О компании</a></li>
+          <li><a href="about.html">О компании</a></li>
           <li><a href="press.html">Пресс-центр</a></li>
           <li><a href="contacts.html">Контакты</a></li>
         </ul>
@@ -136,14 +155,14 @@
     </div>
   </div>
 
-  <div class="burger__menu" data-menu style="background-color: @color;">
+  <div class="burger__menu" data-menu style="background-color: var(--brown-color);">
     <nav class="">
       <ul>
         <li><a href="projects.html">Проекты</a></li>
         <li><a href="housing.html">Жильё</a></li>
         <li><a href="food.html">Еда</a></li>
         <li><a href="science.html">Наука</a></li>
-        <li><a href="about.html">О компании</a></li>
+        <li><a href="about.html">О компании</a></li>
         <li><a href="press.html">Пресс-центр</a></li>
         <li><a href="contacts.html">Контакты</a></li>
       </ul>
@@ -162,3 +181,130 @@
     </div>
   </div>
 </header>
+
+    <main class="main bvi-hide first-block" data-scroll-container>
+      <section class="housing projects__wrap">
+        <div class="container housing__title contacts__title">
+          <h3 class="title" style="color: var(--brown-color)">КОНТАКТЫ</h3>
+          <p>Мы любим животных и стараемся поддерживать тех из них, кому не посчастливилось иметь ласковых хозяев и
+            тёплый кров. Один из проверенных способов это сделать — помочь благотворительному фонду «<a
+              href="https://luchdobrafound.ru/">Луч Добра</a>».
+            Благодаря их труду ежегодно сотни питомцев находят свой новый дом.
+          </p>
+        </div>
+        <div class="container">
+          <div class="projects">
+            <div class="contacts-card">
+              <div class="contacts-card__text">
+                <span class="contacts-card__title">Иванов Иван Иванович</span>
+                <span class="contacts-card__desc">Должность</span>
+              </div>
+              <div class="contacts-card__links">
+                <a href="tel:+79787655456" class="contacts-card__title">+7 978 765-54-56</a>
+                <a href="mailto:II@ks.ru" class="contacts-card__title">II@ks.ru</a>
+              </div>
+            </div>
+            <div class="contacts-card">
+              <div class="contacts-card__text">
+                <span class="contacts-card__title">Пиар-департамент</span>
+                <span class="contacts-card__desc">Должность</span>
+              </div>
+              <div class="contacts-card__links">
+                <a href="tel:+79787655456" class="contacts-card__title">+7 978 765-54-56</a>
+                <a href="mailto:II@ks.ru" class="contacts-card__title">II@ks.ru</a>
+              </div>
+            </div>
+            <div class=""></div>
+            <div class="contacts-card" style="background-color: var(--green-color);">
+              <div class="contacts-card__text">
+                <span class="contacts-card__title">Комфортная среда / еда</span>
+              </div>
+              <div class="contacts-card__links">
+                <a href="mailto:eat@ks.ru" class="contacts-card__title">eat@ks.ru</a>
+              </div>
+            </div>
+            <div class="contacts-card" style="background-color: var(--blue-color);">
+              <div class="contacts-card__text">
+                <span class="contacts-card__title">Комфортная среда / наука</span>
+              </div>
+              <div class="contacts-card__links">
+                <a href="mailto:brean@ks.ru" class="contacts-card__title">brean@ks.ru</a>
+              </div>
+            </div>
+            <div class="contacts-card" style="background-color: var(--purple-color);">
+              <div class="contacts-card__text">
+                <span class="contacts-card__title">Комфортная среда / жилье</span>
+              </div>
+              <div class="contacts-card__links">
+                <a href="mailto:home@ks.ru" class="contacts-card__title">home@ks.ru</a>
+              </div>
+            </div>
+            <div class="contacts-card" style="background-color: #D9D9D9; color: var(--black-color);">
+              <div class="contacts-card__text">
+                <span class="contacts-card__title" style="color: var(--black-color);">Предложения и замечания </span>
+                <span class="contacts-card__desc" style="color: var(--black-color);">Если у Вас остались вопросы или предложения, напишите нам</span>
+              </div>
+              <div class="contacts-card__links">
+                <a href="mailto:help@ks.ru" class="contacts-card__title" style="color: var(--black-color);">help@ks.ru</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+    <footer class="footer" style="background-color: var(--brown-color);" >
+  <div class="footer__inner container">
+    <a href="/" class="footer__logo">
+      <span title="Главная страница"></span>
+      <div title="Главная страница">
+        <svg class="">
+          <use xlink:href="img/sprite.svg#logo"></use>
+        </svg>
+      </div>
+    </a>
+    <h3 class="footer__text">Контактная информация</h3>
+    <div class="footer__wrap">
+      <div class="footer__content footer__text">
+        <p class="footer__text footer__text-bold footer__text-medium">ФГБУ «Комфортная среда»</p>
+        <a class="footer__text footer__text-big" href="tel:+74991247707">+7 499 124-77-07</a>
+        <a class="footer__text" href="mailto:info@comfort-sr.ru">info@comfort-sr.ru</a>
+        <div class="footer__timetable">
+          <h6 class="footer__text footer__text-bold">Время работы:</h6>
+          <p class="footer__text">Пн-Чт с 9:00 до 18:00, </br>
+            Пт с 9:00 до 16:45</p>
+        </div>
+        <p class="footer__text">117312, г. Москва, ул. Вавилова, д. 39</p>
+      </div>
+
+      <div class="footer__content">
+        <p class="footer__text footer__text-medium footer__text-bold">Передача корреспонденции</p>
+        <div class="footer__timetable">
+          <h6 class="footer__text footer__text-bold">Время работы:</h6>
+          <p class="footer__text">Пн-Чт с 9:00 до 18:00, </br>
+            Пт с 9:00 до 16:45</p>
+        </div>
+        <p class="footer__text footer__text-medium footer__text-bold">Обратная связь</p>
+        <div class="footer__block">
+          <a href="#">
+            <p class="footer__text">Форма обратной связи</p>
+            <a href="#">
+              <svg class="">
+                <use xlink:href="img/sprite.svg#arrow"></use>
+              </svg>
+            </a>
+          </a>
+        </div>
+      </div>
+      <a class="footer__logo-big" href="#">
+        <svg class="">
+          <use xlink:href="img/sprite.svg#logoBig" style="fill: @purpleLogo"></use>
+        </svg>
+      </a>
+    </div>
+</footer>
+
+  </div>
+</body>
+
+</html>

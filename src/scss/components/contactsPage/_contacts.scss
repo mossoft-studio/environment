@@ -1,0 +1,87 @@
+.contacts {
+  &-card {
+    padding: 40px;
+    background-color: var(--brown-color);
+    height: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+
+    & span {
+      color: #fff;
+    }
+
+    & a {
+      color: #fff;
+      transition: all 0.3s;
+
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+
+    &__text {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    &__links {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    &__title {
+      font-weight: 300;
+      font-size: 32px;
+      line-height: 36px;
+    }
+
+    &__desc {
+      font-weight: 300;
+      font-size: 22px;
+      line-height: 25px;
+    }
+  }
+}
+
+@include big-desktop {
+  .contacts {
+    &__title {
+      flex-direction: column;
+      align-items: start;
+      gap: 8px;
+    }
+  }
+}
+
+@include tablet {
+  .contacts {
+    &-card {
+      padding: 30px;
+      height: 300px;
+    }
+  }
+}
+
+@include small-tablet {
+  .contacts {
+    &-card {
+      padding: 20px;
+      height: 220px;
+
+      &__title {
+        font-size: 18px;
+        line-height: 20px;
+      }
+
+      &__desc {
+        font-size: 16px;
+        line-height: 18px;
+      }
+    }
+  }
+}

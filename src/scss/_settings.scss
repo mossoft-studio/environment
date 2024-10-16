@@ -34,7 +34,11 @@ a {
 }
 
 .site-container {
+  height: 100%;
   overflow: hidden; // если используете на сайте position: sticky - уберите эту настройку
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .is-hidden {
@@ -82,7 +86,7 @@ a {
 }
 
 .container {
-  margin: 0 auto;
+  // margin: 0 auto;
   padding: 0 var(--container-offset);
   max-width: var(--container-width);
 }
@@ -129,6 +133,7 @@ h6 {
 
 .main {
   padding-bottom: 120px;
+  flex: 1 auto;
 }
 
 .section {

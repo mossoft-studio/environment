@@ -1,0 +1,15 @@
+.proj__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  max-width: 63vw;
+  gap: 20px;
+}
+
+
+@include small-tablet {
+  .proj__info {
+    max-width: unset;
+    margin-top: 0px;
+  }
+}

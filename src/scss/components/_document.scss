@@ -1,0 +1,140 @@
+.document {
+  border: 1px solid var(--brown-color);
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+
+  &__link {
+    position: relative;
+    overflow: hidden;
+    width: 22px;
+    height: 25px;
+
+    & svg {
+      width: 100%;
+      height: 100%;
+    }
+
+    &-long {
+      display: none;
+    }
+
+    &-hover {
+      transform: translateY(-200%);
+      transition: transform 0.7s ease;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    &-base {
+      transform: translate(0);
+      transition: transform 0.7s linear;
+    }
+  }
+
+  &:hover {
+    border-color: var(--brown-light-color);
+
+
+
+    & .document__download {
+      opacity: 0.8;
+      transition: all 0.7s linear;
+      span p {
+        border-color: var(--light-color);
+
+      }
+    }
+
+    & .document__link {
+      &-base {
+        transform: translateY(100%);
+      }
+
+      &-hover {
+        transform: translateY(0);
+      }
+    }
+  }
+
+
+
+  >div {
+    height: 100%;
+    padding: 40px;
+    padding-bottom: 0;
+  }
+
+  p {
+    font-size: 32px;
+    line-height: 36px;
+    font-weight: 300;
+    margin: 0;
+  }
+
+  &__download {
+    display: flex;
+    background-color: var(--brown-color);
+    height: 100px;
+    justify-content: end;
+    padding-right: 40px;
+
+    span {
+      position: relative;
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      gap: 12px;
+      overflow: hidden;
+
+      p {
+        color: var(--light-color);
+        margin: 0;
+        height: 29px;
+        border-bottom: 1px solid var(--brown-color);
+        transition: border-color 0.7s ease;
+      }
+
+      svg {
+        width: 25px;
+        height: 25px;
+        fill: var(--light-color);
+        overflow: hidden;
+      }
+    }
+  }
+}
+
+
+@include tablet {
+  .document {
+    height: 158px;
+
+    >div {
+      padding: 20px 20px 0 20px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 20.7px;
+
+    }
+
+    &__download {
+      height: 56px;
+
+      span {
+        gap: 8px;
+
+        p {
+          height: 18px;
+        }
+
+        svg {
+          width: 18px;
+        }
+      }
+    }
+  }
+}

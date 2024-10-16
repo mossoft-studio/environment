@@ -1,0 +1,45 @@
+.docs {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  &__title {
+    font-size: 64px;
+    font-weight: 500;
+    margin: 0;
+  }
+
+  &__container {
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@include tablet {
+  .docs {
+    &__container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    &__title {
+      font-size: 58px;
+    }
+  }
+}
+
+
+@include small-tablet {
+  .docs {
+    gap: 28px;
+
+    &__container {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+
+    &__title {
+      font-size: 26px;
+    }
+  }
+}

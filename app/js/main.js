@@ -11818,12 +11818,38 @@ if (scrollContainer) {
     scrollButton.addEventListener('click', function () {
       // Скролл до следующей секции без указания easing
       locomotiveScroll.scrollTo('.desc', {
-        offset: -500,
+        offset: -100,
         // Смещение (при необходимости)
         duration: 3 // Длительность скролла в миллисекундах
       });
     });
   }
+}
+const arrowUp = document.querySelector('.arrow-up');
+let lastScrollTop = 0;
+if (arrowUp) {
+  // Изначально скрываем кнопку
+  arrowUp.classList.remove('show');
+
+  // Отслеживаем событие прокрутки
+  window.addEventListener('scroll', function () {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    // Проверяем, не находимся ли мы в самом верху страницы
+    if (scrollTop === 0) {
+      arrowUp.classList.remove('show');
+    } else if (scrollTop < lastScrollTop) {
+      arrowUp.classList.add('show');
+    } else {
+      arrowUp.classList.remove('show');
+    }
+    lastScrollTop = scrollTop;
+  });
+  arrowUp.addEventListener('click', function () {
+    locomotiveScroll.scrollTo(0, {
+      duration: 1
+    });
+  });
 }
 aos__WEBPACK_IMPORTED_MODULE_6__.init();
 document.querySelectorAll('.animate-on-load').forEach(function (element) {
@@ -11860,3 +11886,4 @@ document.addEventListener("scroll", function () {
 
 /******/ })()
 ;
+//# sourceMappingURL=main.js.map

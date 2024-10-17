@@ -6,7 +6,7 @@
     <div class="site-container">
       @include('partials/header.html', {"color": "var(--brown-color)", "text":
       "" })
-      <main class="main bvi-hide" data-scroll-container>
+      <main class="main bvi-hide" data-scroll-container style="margin-top: calc(var(--header-height) * -1);">
         <section class="hero">
           <div class="container">
             <div class="hero__text" data-scroll data-scroll-speed="-0.2">
@@ -267,6 +267,8 @@
           @include('partials/global/quote.html')
         </section>
       </main>
+
+      @include('partials/global/arrowUp.html', {"color": "var(--brown-color)"})
 
       @include('partials/footer.html', {"color": "var(--brown-color)", "text":
       "" })

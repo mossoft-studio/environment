@@ -3075,6 +3075,33 @@ h6 {
   margin-top: var(--header-height);
 }
 
+.arrow-up {
+  cursor: pointer;
+  z-index: 80;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  border-radius: 50%;
+  padding: 16px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  opacity: 0;
+  visibility: hidden;
+}
+.arrow-up.show {
+  opacity: 1;
+  visibility: visible;
+}
+.arrow-up svg {
+  width: 100%;
+  height: 100%;
+  stroke: #fff;
+  fill: transparent;
+}
+
 @media (max-width: 1600px) {
   .all-link {
     margin-top: 50px;
@@ -3114,7 +3141,6 @@ h6 {
   }
 }
 .header {
-  position: absolute;
   left: 0;
   top: 0;
   z-index: 50;
@@ -4821,6 +4847,7 @@ h6 {
 
 .slider {
   margin-top: 20px;
+  overflow: hidden;
 }
 
 @media (max-width: 1280px) {
@@ -5264,4 +5291,4 @@ h6 {
     font-size: 16px;
     line-height: 18px;
   }
-}
+}/*# sourceMappingURL=main.css.map */

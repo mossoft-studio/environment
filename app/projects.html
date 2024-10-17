@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru" class="page">
-<head>
+  <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
@@ -15,102 +15,10 @@
   <script defer src="js/main.js"></script>
 </head>
 
-<body class="page__body">
-  <div class="site-container">
-    <header class="header" style="background-color: var(--brown-color);">
+  <body class="page__body">
+    <div class="site-container">
+      <header class="header" style="background-color: var(--brown-color);">
   <div class="container header__inner">
-    <!-- <a href="#" title="Главная страница" class="header__logo">
-      <svg
-        viewBox="0 0 160 38"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M91.6121 32.263L96.0642 20.5762H97.3627L101.815 32.263H100.238L99.125 29.3876H94.3019L93.1888 32.263H91.6121ZM94.7656 28.0891H98.6612L96.7134 22.9877L94.7656 28.0891Z"
-          fill="white"
-        />
-        <path
-          d="M80.3804 32.263L80.3804 30.9644H81.0297C81.2337 30.7975 81.4378 30.612 81.6047 30.3894C81.9015 29.9998 82.2354 29.4433 82.3282 28.6456L83.2557 20.5762H89.9339V30.9644H91.2324V32.263H89.8411H81.7717H80.3804ZM82.8847 30.9644H88.4498V21.8747H84.6099L83.8122 28.6456C83.7195 29.4433 83.4783 29.9998 83.2743 30.3894C83.1444 30.612 83.0146 30.7975 82.8847 30.9644Z"
-          fill="white"
-        />
-        <path
-          d="M71.8466 32.263V20.5762H79.2667V21.8747H73.3306V25.5848H78.803V26.8833H73.3306V30.9644H79.4522V32.263H71.8466Z"
-          fill="white"
-        />
-        <path
-          d="M61.9192 32.263V20.5762H65.9075C67.9295 20.5762 69.6176 22.2457 69.6176 24.1935C69.6176 26.1413 67.9295 27.8108 65.9075 27.8108H63.4032V32.263H61.9192ZM63.4032 26.5123H65.9075C67.1133 26.5123 68.1336 25.492 68.1336 24.1935C68.1336 22.895 67.1133 21.8747 65.9075 21.8747H63.4032V26.5123Z"
-          fill="white"
-        />
-        <path
-          d="M58.3041 28.3673H59.8808C59.2316 30.5934 57.4693 32.3557 54.8722 32.3557C51.9969 32.3557 49.3998 29.7586 49.3998 26.4195C49.3998 23.0805 51.9969 20.4834 54.8722 20.4834C57.3765 20.4834 59.1388 22.2457 59.7881 24.4717H58.2113C57.8217 22.9877 56.6531 21.7819 54.8722 21.7819C52.8317 21.7819 50.8839 23.7297 50.8839 26.4195C50.8839 29.1094 52.8317 31.0572 54.8722 31.0572C56.7458 31.0572 57.9145 29.8514 58.3041 28.3673Z"
-          fill="white"
-        />
-        <path
-          d="M151.244 17.4231L154.212 12.5072C153.729 12.3588 153.303 12.1362 152.913 11.8394C152.264 11.3386 151.615 10.5223 151.615 9.16816C151.615 7.31312 153.191 5.73633 155.139 5.73633H159.499V17.4231H158.015V12.6H155.807L152.913 17.4231H151.244ZM155.139 11.3015H158.015V7.03486H155.139C154.008 7.03486 153.099 7.98093 153.099 9.16816C153.099 10.3554 154.008 11.3015 155.139 11.3015Z"
-          fill="white"
-        />
-        <path
-          d="M140.488 17.4231L144.94 5.73633H146.239L150.691 17.4231H149.114L148.001 14.5478H143.178L142.065 17.4231H140.488ZM143.642 13.2493H147.537L145.589 8.14789L143.642 13.2493Z"
-          fill="white"
-        />
-        <path
-          d="M130.378 17.4231V5.73633H131.862V10.8377H137.52V5.73633H139.004V17.4231H137.52V12.1362H131.862V17.4231H130.378Z"
-          fill="white"
-        />
-        <path
-          d="M123.603 17.4231V7.03486H120.078V5.73633H128.611V7.03486H125.087V17.4231H123.603Z"
-          fill="white"
-        />
-        <path
-          d="M111.357 17.4231V5.73633H115.345C117.367 5.73633 119.055 7.40587 119.055 9.35367C119.055 11.3015 117.367 12.971 115.345 12.971H112.841V17.4231H111.357ZM112.841 11.6725H115.345C116.551 11.6725 117.571 10.6522 117.571 9.35367C117.571 8.05514 116.551 7.03486 115.345 7.03486H112.841V11.6725Z"
-          fill="white"
-        />
-        <path
-          d="M103.748 6.94209C101.708 6.94209 99.7598 8.88988 99.7598 11.5797C99.7598 14.2695 101.708 16.2173 103.748 16.2173C105.789 16.2173 107.736 14.2695 107.736 11.5797C107.736 8.88988 105.789 6.94209 103.748 6.94209ZM103.748 5.64355C106.623 5.64355 109.221 8.24062 109.221 11.5797C109.221 14.9188 106.623 17.5158 103.748 17.5158C100.873 17.5158 98.2758 14.9188 98.2758 11.5797C98.2758 8.24062 100.873 5.64355 103.748 5.64355Z"
-          fill="white"
-        />
-        <path
-          d="M90.2114 17.5159V15.9391C86.8723 15.735 85.0173 13.9171 85.0173 11.3942C85.0173 8.87135 86.8723 7.05341 90.2114 6.84936V5.73633H91.6954V6.84936C95.0345 7.05341 96.8896 8.87135 96.8896 11.3942C96.8896 13.9171 95.0345 15.735 91.6954 15.9391V17.5159H90.2114ZM90.2114 14.6405V8.14789C87.8926 8.24064 86.5013 9.61337 86.5013 11.3942C86.5013 13.1751 87.8926 14.5478 90.2114 14.6405ZM91.6954 8.14789V14.6405C94.0142 14.5478 95.4055 13.1751 95.4055 11.3942C95.4055 9.61337 94.0142 8.24064 91.6954 8.14789Z"
-          fill="white"
-        />
-        <path
-          d="M71.6654 17.4231V5.73633H72.8712L77.2305 15.1043L81.5899 5.73633H82.7957V17.4231H81.3116V9.53917L77.6943 17.4231H76.7668L73.1494 9.53917V17.4231H71.6654Z"
-          fill="white"
-        />
-        <path
-          d="M64.0568 6.94209C62.0163 6.94209 60.0685 8.88988 60.0685 11.5797C60.0685 14.2695 62.0163 16.2173 64.0568 16.2173C66.0974 16.2173 68.0452 14.2695 68.0452 11.5797C68.0452 8.88988 66.0974 6.94209 64.0568 6.94209ZM64.0568 5.64355C66.9321 5.64355 69.5292 8.24062 69.5292 11.5797C69.5292 14.9188 66.9321 17.5158 64.0568 17.5158C61.1815 17.5158 58.5844 14.9188 58.5844 11.5797C58.5844 8.24062 61.1815 5.64355 64.0568 5.64355Z"
-          fill="white"
-        />
-        <path
-          d="M50.2346 17.4231V5.73633H51.7187V11.487L56.2635 5.73633H58.0258L53.4809 11.487L58.3968 17.4231H56.6345L51.7187 11.487V17.4231H50.2346Z"
-          fill="white"
-        />
-        <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
-          d="M27.6862 36.5537C29.9914 37.5086 32.462 38 34.9572 38V28.5C33.7096 28.5 32.4743 28.2543 31.3217 27.7769C30.1691 27.2994 29.1218 26.5997 28.2396 25.7175C27.3575 24.8354 26.6577 23.7881 26.1803 22.6355C25.7029 21.4829 25.4572 20.2476 25.4572 19L15.9572 19C15.9572 21.4951 16.4486 23.9658 17.4034 26.271C18.3583 28.5762 19.7578 30.6707 21.5221 32.435C23.2864 34.1993 25.381 35.5989 27.6862 36.5537Z"
-          fill="white"
-        />
-        <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
-          d="M17.4034 11.729C16.4486 14.0342 15.9572 16.5049 15.9572 19L25.4571 19C25.4571 17.7524 25.7029 16.5171 26.1803 15.3645C26.6577 14.2119 27.3575 13.1646 28.2396 12.2825C29.1218 11.4003 30.1691 10.7006 31.3217 10.2231C32.4743 9.74572 33.7096 9.5 34.9572 9.5L34.9572 0C32.462 -3.27194e-07 29.9914 0.491449 27.6862 1.44629C25.381 2.40113 23.2864 3.80066 21.5221 5.56497C19.7578 7.32928 18.3583 9.42383 17.4034 11.729Z"
-          fill="white"
-        />
-        <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
-          d="M7.27099 20.4463C4.9658 19.4915 2.49512 19 -1.66103e-06 19L-8.30517e-07 28.5C1.24756 28.5 2.4829 28.7457 3.63549 29.2231C4.78809 29.7006 5.83536 30.4003 6.71752 31.2825C7.59967 32.1646 8.29944 33.2119 8.77686 34.3645C9.25428 35.5171 9.5 36.7524 9.5 38L19 38C19 35.5049 18.5086 33.0342 17.5537 30.729C16.5989 28.4238 15.1993 26.3293 13.435 24.565C11.6707 22.8007 9.57617 21.4011 7.27099 20.4463Z"
-          fill="white"
-        />
-        <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
-          d="M17.5537 7.27099C18.5086 4.9658 19 2.49512 19 2.26573e-07L9.5 1.13286e-07C9.5 1.24756 9.25428 2.4829 8.77686 3.63549C8.29944 4.78809 7.59967 5.83536 6.71752 6.71752C5.83536 7.59967 4.78809 8.29944 3.63549 8.77686C2.4829 9.25428 1.24756 9.5 5.28544e-07 9.5L0 19C2.49512 19 4.9658 18.5086 7.27098 17.5537C9.57617 16.5989 11.6707 15.1993 13.435 13.435C15.1993 11.6707 16.5989 9.57617 17.5537 7.27099Z"
-          fill="white"
-        />
-      </svg>
-    </a> -->
     <a href="index.html" class="footer__logo">
       <span title="Главная страница"></span>
       <div title="Главная страница">
@@ -182,30 +90,46 @@
   </div>
 </header>
 
-    <main class="main bvi-hide first-block" data-scroll-container>
-      <section class="housing projects__wrap">
-        <div class="container housing__title">
-          <h3 class="title" style="color: var(--brown-color)">Проекты</h3>
-          <p>Мы любим животных и стараемся поддерживать тех из них, кому не посчастливилось иметь ласковых хозяев и
-            тёплый кров. Один из проверенных способов это сделать — помочь благотворительному фонду «<a
-              href="https://luchdobrafound.ru/">Луч Добра</a>».
-            Благодаря их труду ежегодно сотни питомцев находят свой новый дом.
-          </p>
-        </div>
-        <div class="container projects__container">
-          <div class="buttons__container">
-            <button class="button all-active active">Все</button>
-            <button class="button button-alternative home-active">Жильё</button>
+      <main class="main bvi-hide first-block" data-scroll-container>
+        <section class="housing projects__wrap">
+          <div class="container housing__title" data-scroll data-scroll-speed="0.1">
+            <h3 class="title" style="color: var(--brown-color)">Проекты</h3>
+            <p>
+              Мы любим животных и стараемся поддерживать тех из них, кому не
+              посчастливилось иметь ласковых хозяев и тёплый кров. Один из
+              проверенных способов это сделать — помочь благотворительному
+              фонду «<a href="https://luchdobrafound.ru/">Луч Добра</a>».
+              Благодаря их труду ежегодно сотни питомцев находят свой новый дом.
+            </p>
           </div>
+          <div class="container projects__container">
+            <div class="buttons__container">
+              <button class="button all-active active">Все</button>
+              <button class="button button-alternative home-active">
+                Жильё
+              </button>
+            </div>
 
-          <div class="buttons__container buttons__container-rev">
-            <button class="button food-active">Еда</button>
-            <button class="button button-alternative science-active">Наука</button>
+            <div class="buttons__container buttons__container-rev">
+              <button class="button food-active">Еда</button>
+              <button class="button button-alternative science-active">
+                Наука
+              </button>
+            </div>
           </div>
-        </div>
-        <div class="container">
-          <div class="projects">
-            <a href="project.html" class="card">
+          <div class="container">
+            <div class="projects">
+              <div
+                data-aos="fade-up"
+                data-aos-offset="-200"
+                data-aos-delay="0"
+                data-aos-duration="600"
+                data-aos-easing="ease-out"
+                data-aos-mirror="true"
+                data-aos-once="true"
+                data-aos-anchor-placement="top-center"
+              >
+                <a href="project.html" class="card">
   <div class="card__img">
     <img src="img/home_bg.jpg" alt="Картинка карточки" />
     <div class="card__tags">
@@ -254,7 +178,18 @@
   </div>
 </a>
 
-            <a href="project.html" class="card">
+              </div>
+              <div
+                data-aos="fade-up"
+                data-aos-offset="-200"
+                data-aos-delay="300"
+                data-aos-duration="600"
+                data-aos-easing="ease-out"
+                data-aos-mirror="true"
+                data-aos-once="true"
+                data-aos-anchor-placement="top-center"
+              >
+                <a href="project.html" class="card">
   <div class="card__img">
     <img src="img/home_bg.jpg" alt="Картинка карточки" />
     <div class="card__tags">
@@ -303,7 +238,18 @@
   </div>
 </a>
 
-            <a href="project.html" class="card">
+              </div>
+              <div
+                data-aos="fade-up"
+                data-aos-offset="-200"
+                data-aos-delay="600"
+                data-aos-duration="600"
+                data-aos-easing="ease-out"
+                data-aos-mirror="true"
+                data-aos-once="true"
+                data-aos-anchor-placement="top-center"
+              >
+                <a href="project.html" class="card">
   <div class="card__img">
     <img src="img/home_bg.jpg" alt="Картинка карточки" />
     <div class="card__tags">
@@ -352,7 +298,18 @@
   </div>
 </a>
 
-            <a href="project.html" class="card">
+              </div>
+              <div
+                data-aos="fade-up"
+                data-aos-offset="-200"
+                data-aos-delay="0"
+                data-aos-duration="600"
+                data-aos-easing="ease-out"
+                data-aos-mirror="true"
+                data-aos-once="true"
+                data-aos-anchor-placement="top-center"
+              >
+                <a href="project.html" class="card">
   <div class="card__img">
     <img src="img/home_bg.jpg" alt="Картинка карточки" />
     <div class="card__tags">
@@ -401,7 +358,18 @@
   </div>
 </a>
 
-            <a href="project.html" class="card">
+              </div>
+              <div
+                data-aos="fade-up"
+                data-aos-offset="-200"
+                data-aos-delay="300"
+                data-aos-duration="600"
+                data-aos-easing="ease-out"
+                data-aos-mirror="true"
+                data-aos-once="true"
+                data-aos-anchor-placement="top-center"
+              >
+                <a href="project.html" class="card">
   <div class="card__img">
     <img src="img/home_bg.jpg" alt="Картинка карточки" />
     <div class="card__tags">
@@ -450,7 +418,18 @@
   </div>
 </a>
 
-            <a href="project.html" class="card">
+              </div>
+              <div
+                data-aos="fade-up"
+                data-aos-offset="-200"
+                data-aos-delay="600"
+                data-aos-duration="600"
+                data-aos-easing="ease-out"
+                data-aos-mirror="true"
+                data-aos-once="true"
+                data-aos-anchor-placement="top-center"
+              >
+                <a href="project.html" class="card">
   <div class="card__img">
     <img src="img/home_bg.jpg" alt="Картинка карточки" />
     <div class="card__tags">
@@ -499,7 +478,18 @@
   </div>
 </a>
 
-            <a href="project.html" class="card">
+              </div>
+              <div
+                data-aos="fade-up"
+                data-aos-offset="-200"
+                data-aos-delay="0"
+                data-aos-duration="600"
+                data-aos-easing="ease-out"
+                data-aos-mirror="true"
+                data-aos-once="true"
+                data-aos-anchor-placement="top-center"
+              >
+                <a href="project.html" class="card">
   <div class="card__img">
     <img src="img/home_bg.jpg" alt="Картинка карточки" />
     <div class="card__tags">
@@ -548,7 +538,18 @@
   </div>
 </a>
 
-            <a href="project.html" class="card">
+              </div>
+              <div
+                data-aos="fade-up"
+                data-aos-offset="-200"
+                data-aos-delay="300"
+                data-aos-duration="600"
+                data-aos-easing="ease-out"
+                data-aos-mirror="true"
+                data-aos-once="true"
+                data-aos-anchor-placement="top-center"
+              >
+                <a href="project.html" class="card">
   <div class="card__img">
     <img src="img/home_bg.jpg" alt="Картинка карточки" />
     <div class="card__tags">
@@ -597,7 +598,18 @@
   </div>
 </a>
 
-            <a href="project.html" class="card">
+              </div>
+              <div
+                data-aos="fade-up"
+                data-aos-offset="-200"
+                data-aos-delay="600"
+                data-aos-duration="600"
+                data-aos-easing="ease-out"
+                data-aos-mirror="true"
+                data-aos-once="true"
+                data-aos-anchor-placement="top-center"
+              >
+                <a href="project.html" class="card">
   <div class="card__img">
     <img src="img/home_bg.jpg" alt="Картинка карточки" />
     <div class="card__tags">
@@ -646,166 +658,19 @@
   </div>
 </a>
 
-            <a href="project.html" class="card">
-  <div class="card__img">
-    <img src="img/home_bg.jpg" alt="Картинка карточки" />
-    <div class="card__tags">
-      <div class="card__tag card__tag-main">
-        <svg class="">
-          <use xlink:href="img/sprite.svg#logoSmall"></use>
-        </svg>
-      </div>
-      <div class="card__tag card__tag-food">
-        <span>ЕДА</span>
-      </div>
-      <div class="card__tag card__tag-science"><span>НАУКА</span></div>
-      <div class="card__tag card__tag-home"><span>ЖИЛЬЁ</span></div>
-    </div>
-  </div>
-  <div class="card__body">
-    <h3>
-      Наименование проекта в несколько строк что бы уместилось все самое главнок
-      что точно нужно расскахать о проекте Наименование проекта в несколько
-      строк что бы уместилось все самое главнок что точно нужно расскахать о
-      проекте
-    </h3>
-    <span
-      >Мы любим животных и стараемся поддерживать тех из них, кому не
-      посчастливилось иметь ласковых хозяев и тёплый кро Мы любим животных и
-      стараемся поддерживать тех из них, кому не посчастливилось иметь ласковых
-      хозяев и тёплый кро</span
-    >
-  </div>
-  <div class="card__footer">
-    <span>09.09.2023</span>
-    <div class="card__link">
-      <svg class="card__link card__link-long card__link-hover" style="fill: var(--brown-color);">
-        <use xlink:href="img/sprite.svg#arrowRightLong"></use>
-      </svg>
-      <svg class="card__link card__link-long card__link-base" style="fill: var(--brown-color);">
-        <use xlink:href="img/sprite.svg#arrowRightLong"></use>
-      </svg>
-      <svg class="card__link card__link-short card__link-hover" style="fill: var(--brown-color);">
-        <use xlink:href="img/sprite.svg#arrowRight"></use>
-      </svg>
-      <svg class="card__link card__link-short card__link-base" style="fill: var(--brown-color);">
-        <use xlink:href="img/sprite.svg#arrowRight"></use>
-      </svg>
-    </div>
-  </div>
-</a>
-
-            <a href="project.html" class="card">
-  <div class="card__img">
-    <img src="img/home_bg.jpg" alt="Картинка карточки" />
-    <div class="card__tags">
-      <div class="card__tag card__tag-main">
-        <svg class="">
-          <use xlink:href="img/sprite.svg#logoSmall"></use>
-        </svg>
-      </div>
-      <div class="card__tag card__tag-food">
-        <span>ЕДА</span>
-      </div>
-      <div class="card__tag card__tag-science"><span>НАУКА</span></div>
-      <div class="card__tag card__tag-home"><span>ЖИЛЬЁ</span></div>
-    </div>
-  </div>
-  <div class="card__body">
-    <h3>
-      Наименование проекта в несколько строк что бы уместилось все самое главнок
-      что точно нужно расскахать о проекте Наименование проекта в несколько
-      строк что бы уместилось все самое главнок что точно нужно расскахать о
-      проекте
-    </h3>
-    <span
-      >Мы любим животных и стараемся поддерживать тех из них, кому не
-      посчастливилось иметь ласковых хозяев и тёплый кро Мы любим животных и
-      стараемся поддерживать тех из них, кому не посчастливилось иметь ласковых
-      хозяев и тёплый кро</span
-    >
-  </div>
-  <div class="card__footer">
-    <span>09.09.2023</span>
-    <div class="card__link">
-      <svg class="card__link card__link-long card__link-hover" style="fill: var(--brown-color);">
-        <use xlink:href="img/sprite.svg#arrowRightLong"></use>
-      </svg>
-      <svg class="card__link card__link-long card__link-base" style="fill: var(--brown-color);">
-        <use xlink:href="img/sprite.svg#arrowRightLong"></use>
-      </svg>
-      <svg class="card__link card__link-short card__link-hover" style="fill: var(--brown-color);">
-        <use xlink:href="img/sprite.svg#arrowRight"></use>
-      </svg>
-      <svg class="card__link card__link-short card__link-base" style="fill: var(--brown-color);">
-        <use xlink:href="img/sprite.svg#arrowRight"></use>
-      </svg>
-    </div>
-  </div>
-</a>
-
-            <a href="project.html" class="card">
-  <div class="card__img">
-    <img src="img/home_bg.jpg" alt="Картинка карточки" />
-    <div class="card__tags">
-      <div class="card__tag card__tag-main">
-        <svg class="">
-          <use xlink:href="img/sprite.svg#logoSmall"></use>
-        </svg>
-      </div>
-      <div class="card__tag card__tag-food">
-        <span>ЕДА</span>
-      </div>
-      <div class="card__tag card__tag-science"><span>НАУКА</span></div>
-      <div class="card__tag card__tag-home"><span>ЖИЛЬЁ</span></div>
-    </div>
-  </div>
-  <div class="card__body">
-    <h3>
-      Наименование проекта в несколько строк что бы уместилось все самое главнок
-      что точно нужно расскахать о проекте Наименование проекта в несколько
-      строк что бы уместилось все самое главнок что точно нужно расскахать о
-      проекте
-    </h3>
-    <span
-      >Мы любим животных и стараемся поддерживать тех из них, кому не
-      посчастливилось иметь ласковых хозяев и тёплый кро Мы любим животных и
-      стараемся поддерживать тех из них, кому не посчастливилось иметь ласковых
-      хозяев и тёплый кро</span
-    >
-  </div>
-  <div class="card__footer">
-    <span>09.09.2023</span>
-    <div class="card__link">
-      <svg class="card__link card__link-long card__link-hover" style="fill: var(--brown-color);">
-        <use xlink:href="img/sprite.svg#arrowRightLong"></use>
-      </svg>
-      <svg class="card__link card__link-long card__link-base" style="fill: var(--brown-color);">
-        <use xlink:href="img/sprite.svg#arrowRightLong"></use>
-      </svg>
-      <svg class="card__link card__link-short card__link-hover" style="fill: var(--brown-color);">
-        <use xlink:href="img/sprite.svg#arrowRight"></use>
-      </svg>
-      <svg class="card__link card__link-short card__link-base" style="fill: var(--brown-color);">
-        <use xlink:href="img/sprite.svg#arrowRight"></use>
-      </svg>
-    </div>
-  </div>
-</a>
-
+              </div>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </main>
 
-    </main>
-
-    <div class="arrow-up" style="background-color: var(--brown-color)">
+      <div class="arrow-up" style="background-color: var(--brown-color)">
   <svg class="">
     <use xlink:href="img/sprite.svg#arrowUp"></use>
   </svg>
 </div>
 
-    <footer class="footer" style="background-color: var(--brown-color);" >
+      <footer class="footer" style="background-color: var(--brown-color);" >
   <div class="footer__inner container">
     <a href="index.html" class="footer__logo">
       <span title="Главная страница"></span>
@@ -856,7 +721,6 @@
     </div>
 </footer>
 
-  </div>
-</body>
-
+    </div>
+  </body>
 </html>

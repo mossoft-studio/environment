@@ -6,7 +6,7 @@
   <div class="site-container">
     @include('partials/header.html', {"color": "var(--blue-color)", "text": "наука" })
     <main class="main bvi-hide first-block" data-scroll-container>
-      <section class="housing">
+      <section class="housing" data-scroll data-scroll-speed="0.1">
         <div class="container housing__title">
           <h3 class="title" style="color: var(--blue-color)">наука</h2>
           <p>Мы любим животных и стараемся поддерживать тех из них, кому не посчастливилось иметь ласковых хозяев и тёплый кров. Один из проверенных способов это сделать — помочь благотворительному фонду <a href="https://luchdobrafound.ru/">«Луч Добра»</a>. Благодаря их труду ежегодно сотни питомцев находят свой новый дом.</p>
@@ -20,12 +20,50 @@
       </section>
 
       <section class="section container">
-        <h2>Проекты / жильё</h2>
+        <div class="section__header">
+          <h2>Проекты / жильё</h2>
+        </div>
         <div class="">
           <div class="projects">
-            @include('partials/global/card.html', {"color": "var(--blue-color)"})
-            @include('partials/global/card.html', {"color": "var(--blue-color)"})
-            @include('partials/global/card.html', {"color": "var(--blue-color)"})
+            <div
+              data-aos="fade-up"
+              data-aos-offset="-200"
+              data-aos-delay="0"
+              data-aos-duration="600"
+              data-aos-easing="ease-out"
+              data-aos-mirror="true"
+              data-aos-once="true"
+              data-aos-anchor-placement="top-center"
+            >
+              @include('partials/global/card.html', {"color":
+              "var(--blue-color)"})
+            </div>
+            <div
+              data-aos="fade-up"
+              data-aos-offset="-200"
+              data-aos-delay="300"
+              data-aos-duration="600"
+              data-aos-easing="ease-out"
+              data-aos-mirror="true"
+              data-aos-once="true"
+              data-aos-anchor-placement="top-center"
+            >
+              @include('partials/global/card.html', {"color":
+              "var(--blue-color)"})
+            </div>
+            <div
+              data-aos="fade-up"
+              data-aos-offset="-200"
+              data-aos-delay="600"
+              data-aos-duration="600"
+              data-aos-easing="ease-out"
+              data-aos-mirror="true"
+              data-aos-once="true"
+              data-aos-anchor-placement="top-center"
+            >
+              @include('partials/global/card.html', {"color":
+              "var(--blue-color)"})
+            </div>
           </div>
           <div class="all-link">
             <a href="#">Все проекты</a>
@@ -39,12 +77,50 @@
       </section>
 
       <section class="section container">
-        <h2>Новости</h2>
+        <div class="section__header">
+          <h2>Новости</h2>
+        </div>
         <div class="">
           <div class="projects">
-            @include('partials/global/card.html', {"color": "var(--blue-color)"})
-            @include('partials/global/card.html', {"color": "var(--blue-color)"})
-            @include('partials/global/card.html', {"color": "var(--blue-color)"})
+            <div
+              data-aos="fade-up"
+              data-aos-offset="-200"
+              data-aos-delay="0"
+              data-aos-duration="600"
+              data-aos-easing="ease-out"
+              data-aos-mirror="true"
+              data-aos-once="true"
+              data-aos-anchor-placement="top-center"
+            >
+              @include('partials/global/card.html', {"color":
+              "var(--blue-color)"})
+            </div>
+            <div
+              data-aos="fade-up"
+              data-aos-offset="-200"
+              data-aos-delay="300"
+              data-aos-duration="600"
+              data-aos-easing="ease-out"
+              data-aos-mirror="true"
+              data-aos-once="true"
+              data-aos-anchor-placement="top-center"
+            >
+              @include('partials/global/card.html', {"color":
+              "var(--blue-color)"})
+            </div>
+            <div
+              data-aos="fade-up"
+              data-aos-offset="-200"
+              data-aos-delay="600"
+              data-aos-duration="600"
+              data-aos-easing="ease-out"
+              data-aos-mirror="true"
+              data-aos-once="true"
+              data-aos-anchor-placement="top-center"
+            >
+              @include('partials/global/card.html', {"color":
+              "var(--blue-color)"})
+            </div>
           </div>
           <div class="all-link">
             <a href="#">Все новости</a>

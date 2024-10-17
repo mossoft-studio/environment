@@ -3123,6 +3123,13 @@ h6 {
   .all-link a {
     font-size: 18px;
   }
+  .arrow-up {
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    bottom: 20px;
+    right: 20px;
+  }
   .title {
     font-size: 40px;
     line-height: 46px;

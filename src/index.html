@@ -4,7 +4,8 @@
 
   <body class="page__body">
     <div class="site-container">
-      @include('partials/header.html', {"color": "var(--brown-color)", "text": "" })
+      @include('partials/header.html', {"color": "var(--brown-color)", "text":
+      "" })
       <main class="main bvi-hide" data-scroll-container>
         <section class="hero">
           <div class="container">
@@ -15,8 +16,8 @@
                 жилыми и нежилыми <br />
                 фондами
               </h1>
-              <span
-                >Наша задача — <br />
+              <span>
+                Наша задача — <br />
                 ваш комфорт</span
               >
             </div>
@@ -156,37 +157,119 @@
           </div>
         </section>
         <section class="section container">
-          <h2>Проекты</h2>
+          <div class="section__header">
+            <h2>Проекты</h2>
+          </div>
           <div class="">
             @include('partials/global/projects.html')
             <div class="all-link">
               <a href="#">Все кейсы</a>
-              <div class="all-link__line" style="background-color: var(--brown-color);"></div>
+              <div
+                class="all-link__line"
+                style="background-color: var(--brown-color)"
+              ></div>
             </div>
           </div>
         </section>
         <section class="section container">
-          <h2>Направления</h2>
+          <div class="section__header">
+            <h2>Направления</h2>
+          </div>
           <div class="projects">
-            @include('partials/global/direction.html', {"color": "var(--purple-color)", "title": "жилье"})
-            @include('partials/global/direction.html', {"color": "var(--green-color)", "title": "еда"})
-            @include('partials/global/direction.html', {"color": "var(--blue-color)", "title": "наука"})
+            <div
+              data-aos="fade-right"
+              data-aos-offset="-200"
+              data-aos-delay="0"
+              data-aos-duration="600"
+              data-aos-easing="ease-out"
+              data-aos-mirror="true"
+              data-aos-once="true"
+              data-aos-anchor-placement="top-center"
+            >
+              @include('partials/global/direction.html', {"color":
+              "var(--purple-color)", "title": "жилье"})
+            </div>
+            <div
+              data-aos="fade-right"
+              data-aos-offset="-200"
+              data-aos-delay="300"
+              data-aos-duration="600"
+              data-aos-easing="ease-out"
+              data-aos-mirror="true"
+              data-aos-once="true"
+              data-aos-anchor-placement="top-center"
+            >
+              @include('partials/global/direction.html', {"color":
+              "var(--green-color)", "title": "еда"})
+            </div>
+            <div
+              data-aos="fade-right"
+              data-aos-offset="-200"
+              data-aos-delay="600"
+              data-aos-duration="600"
+              data-aos-easing="ease-out"
+              data-aos-mirror="true"
+              data-aos-once="true"
+              data-aos-anchor-placement="top-center"
+            >
+              @include('partials/global/direction.html', {"color":
+              "var(--blue-color)", "title": "наука"})
+            </div>
           </div>
         </section>
         <section class="section container">
-          <h2>Главные новости</h2>
+          <div class="section__header">
+            <h2>Главные новости</h2>
+          </div>
           <div class="projects">
-            @include('partials/global/card.html', {"color": "var(--brown-color)"})
-            @include('partials/global/card.html', {"color": "var(--brown-color)"})
-            @include('partials/global/card.html', {"color": "var(--brown-color)"})
+            <div
+              data-aos="fade-up"
+              data-aos-offset="-200"
+              data-aos-delay="0"
+              data-aos-duration="600"
+              data-aos-easing="ease-out"
+              data-aos-mirror="true"
+              data-aos-once="true"
+              data-aos-anchor-placement="top-center"
+            >
+              @include('partials/global/card.html', {"color":
+              "var(--brown-color)"})
+            </div>
+            <div
+              data-aos="fade-up"
+              data-aos-offset="-200"
+              data-aos-delay="300"
+              data-aos-duration="600"
+              data-aos-easing="ease-out"
+              data-aos-mirror="true"
+              data-aos-once="true"
+              data-aos-anchor-placement="top-center"
+            >
+              @include('partials/global/card.html', {"color":
+              "var(--brown-color)"})
+            </div>
+            <div
+              data-aos="fade-up"
+              data-aos-offset="-200"
+              data-aos-delay="600"
+              data-aos-duration="600"
+              data-aos-easing="ease-out"
+              data-aos-mirror="true"
+              data-aos-once="true"
+              data-aos-anchor-placement="top-center"
+            >
+              @include('partials/global/card.html', {"color":
+              "var(--brown-color)"})
+            </div>
           </div>
         </section>
-        <section class="section">
+        <section class="section" data-scroll data-scroll-speed="0.1">
           @include('partials/global/quote.html')
         </section>
       </main>
 
-      @include('partials/footer.html', {"color": "var(--brown-color)", "text": "" })
+      @include('partials/footer.html', {"color": "var(--brown-color)", "text":
+      "" })
     </div>
   </body>
 </html>

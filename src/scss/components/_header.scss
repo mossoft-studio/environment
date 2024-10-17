@@ -1,5 +1,5 @@
 .header {
-  position: absolute;
+  position: relative;
   left: 0;
   top: 0;
   z-index: 50;
@@ -20,6 +20,7 @@
     display: flex;
     align-items: center;
     gap: 80px;
+    position: relative;
   }
 
   &__logo {
@@ -108,7 +109,7 @@
     position: absolute;
     z-index: 100;
     padding-top: 20px;
-    top: calc(var(--header-height) - 10px);
+    top: unset;
     right: 0;
     width: 320px;
     height: 100vh;
@@ -200,6 +201,10 @@
 
     &__social {
       display: none;
+    }
+
+    &__right {
+      gap: 20px;
     }
   }
 

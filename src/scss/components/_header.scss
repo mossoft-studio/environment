@@ -200,11 +200,20 @@
     }
 
     &__social {
-      display: none;
+      >:nth-child(1) {
+        display: none;
+      }
+      >:nth-child(2) {
+        display: none;
+      }
+      &-active {
+        display: block;
+      }
     }
 
     &__right {
       gap: 20px;
+      align-items: baseline;
     }
   }
 
@@ -214,8 +223,21 @@
     &__menu {
       width: 200px;
 
-      & .header__social {
+      & .header__social-burger {
         display: flex;
+        align-items: center;
+        gap: 40px;
+
+        a svg {
+          width: 30px;
+          height: 30px;
+          fill: #fff;
+          transition: all 0.3s;
+
+          &:hover {
+            opacity: 0.6;
+          }
+        }
       }
     }
   }
